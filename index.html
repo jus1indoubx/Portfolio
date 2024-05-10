@@ -6,41 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <style>
-        /* Style cho nền mờ */
-        .blur-bg {
-          display: none; /* Ẩn nền mờ khi chưa kích hoạt popup */
-          position: fixed; /* Nền mờ cố định, phủ kín màn hình */
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
-          z-index: 1; /* Đảm bảo nền mờ nằm dưới popup */
-        }
-        
-        /* Style cho cửa sổ popup */
-        .modal-content {
-          display: none; /* Ẩn popup khi chưa kích hoạt */
-          position: fixed; /* Popup cố định, hiển thị ở giữa màn hình */
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); /* Căn giữa popup */
-          width: 50%; /* Chiều rộng của popup */
-          padding: 20px; /* Đệm bên trong popup */
-          background: #fff; /* Màu nền của popup */
-          border-radius: 5px; /* Bo góc của popup */
-          z-index: 2; /* Đảm bảo popup nằm trên nền mờ */
-        }
-        
-        /* Style cho nút đóng popup */
-        .close-modal {
-          float: right; /* Nút đóng nằm bên phải của tiêu đề */
-          font-size: 30px; /* Kích thước của nút đóng */
-          cursor: pointer; /* Con trỏ chuột khi di chuyển vào nút đóng */
-        }
-        </style>
+    <script src="common.js"></script>
 </head>
 <body>
     <header class="header">
@@ -57,13 +23,7 @@
             <h3>Hi</h3>
             <h1>I'm <span>Thanh Dat<br></span>A beginer deverloper</h1>
             <p>
-                Full name: <br>
-                Birth: <br>
-                Born: <br>
-                Address: <br>
-                Styding: <br>
-                Major: <br>
-                About me: <br>
+                My name is Thanh Dat, i'm 18 and studing Information Technology in Hong Duc University.
             </p>
 
             <div class="bth-box">
@@ -73,8 +33,19 @@
                 <!-- Cửa sổ popup -->
                 <div id="modal-content" class="modal-content">
                     <span id="close-modal" class="close-modal">&times;</span>
-                    <h2>Me :))</h2>
-                    <p>Nội dung của cửa sổ popup.</p>
+                    <h2>Information in University</h2>
+                    <p>
+                        Full name: Nguyễn Huy Thành Đạt<br>
+                        Birth: November 20 2005<br>
+                        Born: Hoằng Trạch, Hoằng Hóa, Thanh Hóa<br>
+                        Address: Hoằng Trạch, Hoằng Hóa, Thanh Hóa<br><br>
+                        
+                        School: Hồng Đức University<br>
+                        ID: 2361030097<br>
+                        Major: Information Technology<br>
+                        Class: K26B - CNTT <br>
+                        Faculty: FICT<br>
+                    </p>
                 </div>
 
                 <script>
